@@ -1,9 +1,6 @@
-
-
 .header {
   display: flex;
-  justify-content: space-between;
-  background-color: #fff;
-  color: black;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid gray;
   padding: 20px;
 }

@@ -1,6 +1,8 @@
+import styles from "@/app/page.module.css";
+
 const ContactPage = () => {
     return (
-        <div>contact pageaa</div>
+        <div className={styles.main}>contact pageaa</div>
     )
 }
 

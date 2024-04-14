@@ -1,6 +1,8 @@
+import styles from "@/app/page.module.css";
+
 const AboutPage = () => {
     return (
-        <div>about pageaa</div>
+        <div className={styles.main}>about pageaa</div>
     )
 }
 
