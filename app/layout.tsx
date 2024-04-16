@@ -1,12 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import HeaderTop from "@/components/layout/headerTop";
 import '../sass/index.scss'
 
-const inter = Inter({ subsets: ["latin"] });
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: "300"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div  className={inter.className}>
+        <div className={nunito.className}>
           <HeaderTop />
           <Header />
           <main className='content'>

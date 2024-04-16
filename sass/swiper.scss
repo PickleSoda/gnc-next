@@ -1,5 +1,6 @@
 .swiper {
     height: 300px;
+    border-radius: 10px;
 }
 
 .swiper-slide {
@@ -7,4 +8,9 @@
     background-color: gray;
     text-align: center;
     color: white;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #42665C;
 }
