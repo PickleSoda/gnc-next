@@ -7,9 +7,9 @@ import 'swiper/swiper-bundle.css';
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 
-const HomePageSlider = () => {
+const AboutPageSlider = () => {
     return ( 
-        <div style={{width: '90vw'}}>
+        <div style={{width: '80vw', margin: '0'}}>
                 <Swiper
                     className='swiper'
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -28,4 +28,4 @@ const HomePageSlider = () => {
     )
 }
 
-export default HomePageSlider
+export default AboutPageSlider

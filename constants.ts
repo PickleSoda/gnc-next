@@ -15,3 +15,7 @@ export const Breakpoints = {
     mobile: '480px',
 }
 
+export const Margin = {
+    center0: '0 auto',
+    center60: '60 auto'
+}

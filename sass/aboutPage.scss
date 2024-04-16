@@ -1,0 +1,64 @@
+.about-page-container {
+    margin: 60px auto;
+}
+
+.about-section-1 {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    width: 80vw;
+    margin: 60px auto;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    & > div > h1 {
+        font-size: 60px;
+    }
+
+    & > div > p {
+        font-size: 25px;
+    }
+
+    & > img {
+        width: 50%;
+    }
+}
+
+.about-section-2 {
+    width: 80vw;
+    margin: 0 auto;
+
+    & > img {
+        height: 400px;
+        width: 80vw;
+        object-fit: cover;
+    }
+}
+
+.about-section-3 {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 60px auto;
+
+    & > div.faq {
+        width: 50%;
+
+        & > h2 {
+            font-size: 40px;
+        }
+
+        & > p {
+            font-size: 20px;
+        }
+    }
+
+    & > div.accoridon {
+        display: flex;
+    }
+}
