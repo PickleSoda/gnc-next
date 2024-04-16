@@ -1,9 +1,12 @@
+import HomePageSlider from "@/components/partials/slider";
 import styles from "./page.module.css";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      home page
+   <main className={styles.main}>
+      <HomePageSlider />
     </main>
   );
 }
+
+export default Home
