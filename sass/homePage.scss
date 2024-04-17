@@ -21,3 +21,23 @@
     object-fit: cover;
     height: 90vh;
 }
+
+//section 2
+.home-section-2 {
+    position: relative;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.home-section-2-animation {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    & > img {
+        overflow-x: hidden;
+        width: 50%;
+        height: 30vw;
+    }
+}

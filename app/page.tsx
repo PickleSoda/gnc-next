@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import jungle  from "@/assets/images/jung.jpg"
+import HomeSectionTwo from "@/components/partials/homeSection2";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
           <h1>GNC GNC GNC</h1>
         </div>
       </section>
+      <HomeSectionTwo />
     </main>
   )
 }
