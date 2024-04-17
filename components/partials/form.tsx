@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from "react-google-recaptcha";
+import Button from "./button";
 
 const ContactForm = () => {
 
@@ -132,7 +133,7 @@ const ContactForm = () => {
                     onChange={onChange}
                 />
             </div>
-            <button type="submit" onClick={() => submit()}>Submit</button>
+            <Button type="submit" onClick={() => submit()} text='Submit'/>
         </form>
     )
 }

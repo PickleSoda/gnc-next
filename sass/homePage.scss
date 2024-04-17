@@ -9,9 +9,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         
         & > h1 {
-            font-size: 50px;
+            font-size: 100px;
+        }
+
+        & > p {
+            font-size: 20px;
         }
     }
 }
@@ -30,14 +37,28 @@
 }
 
 .home-section-2-animation {
-    margin: 10px;
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     gap: 50px;
 
     & > img {
         overflow-x: hidden;
-        width: 50%;
+        width: 40%;
         height: 30vw;
+        border-radius: 10px;
+    }
+
+    & > div {
+        width: 40%;
+
+        & > h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        & > p {
+            font-size: 20px;
+        }
     }
 }
