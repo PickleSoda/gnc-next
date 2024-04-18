@@ -28,7 +28,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header-container">
-                <Image height={50} width={50} alt="logo" src={logo}/>
+                <Link href='/'><Image height={50} width={50} alt="logo" src={logo}/></Link>
                 <div className="header-links">
                     <Link href='/' className={isActive('/')}>Home</Link>
                     <Link href='/about' className={isActive('/about')}>About</Link>
