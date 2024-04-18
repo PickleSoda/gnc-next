@@ -9,6 +9,7 @@ import styles from "./page.module.css";
 import jungle  from "@/assets/images/jung.jpg"
 import HomeSectionTwo from "@/components/partials/homeSection2";
 import Button from "@/components/partials/button";
+import Link from 'next/link';
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
         <Image className="home-first-image" alt="jgl" src={jungle} />
         <div >
           <h1>GNC GNC GNC</h1>
-          <Button text={"Our Projects"}  />
+          <Link href='projects'><Button text={"Our Projects"}  /></Link>
         </div>
       </section>
       <HomeSectionTwo />

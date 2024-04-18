@@ -1,12 +1,36 @@
 'use client'
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from "react-google-recaptcha";
 import Button from "./button";
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+
+    async function handleSubmit(event:any) {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "2ad1c955-3a25-400d-832c-361266906099");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json"
+            },
+            body: json
+        });
+        const result = await response.json();
+        if (result.success) {
+            console.log(result);
+        }
+    }
 
     const [formData, setFormData] = useState({
         name: "",
@@ -29,12 +53,6 @@ const ContactForm = () => {
     const handleChange = (e: { target: { name: any; value: any; }; }) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
-    }
-
-    const handleSubmit = (e: { preventDefault: () => void; }) => {
-        e.preventDefault();
-        // You can perform form validation or submit data here
-        console.log(formData);
     }
 
     const onChange = () => {}
