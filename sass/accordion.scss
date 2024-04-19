@@ -12,11 +12,11 @@
     padding: 10px;
     cursor: pointer;
     background-color: white;
-    box-shadow: 3px 2px 1px #30584D;
+    box-shadow: 3px 2px 2px #30584D;
     border-radius: 10px;
 
     &:hover {
-        box-shadow: 5px 4px 1px #30584D;
+        box-shadow: 5px 4px 2px #30584D;
   
     }
   }
@@ -38,3 +38,7 @@
   .accordion-content {
     padding: 10px;
   }
+
+.accordion-icon {
+  width: 12px;
+}

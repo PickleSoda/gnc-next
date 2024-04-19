@@ -30,7 +30,7 @@ const Home = () => {
       </section>
       <HomeSectionTwo />
       <section className="home-section-3">
-            <Image alt="woods" src={woods} data-aos='fade-up'/>
+            <Image alt="woods-home" src={woods} data-aos='fade-up'/>
       </section>
     </main>
   )
