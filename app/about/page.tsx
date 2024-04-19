@@ -19,10 +19,10 @@ const AboutPage = () => {
     return (
         <div className={styles.main}>
                   <div className="about-page-container">
-         <AboutPageSlider />
+         <AboutPageSlider/>
          <section className="about-section-1" >
-            <Image alt="about-page-img" src={grayImg}/>
-            <div>
+            <Image alt="about-page-img" src={grayImg} data-aos='fade-right'/>
+            <div data-aos='fade-left'>
                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore placeat deserunt ipsam tempora, veniam amet quam nobis ullam suscipit, eum excepturi quidem nam a ut, pariatur voluptates iure nisi ipsa.</p>
             </div>
@@ -37,7 +37,7 @@ const AboutPage = () => {
                 <Accordion title="Section 3" content={<p>Content for section 3</p>} />
                 <Accordion title="Section 4" content={<p>Content for section 4</p>} />
             </div>
-            <div className="faq">
+            <div className="faq" data-aos='zoom-in'>
                 <h2>Frequently Asked Questions</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci ipsam corporis cumque, necessitatibus nam. Maiores assumenda sapiente eveniet voluptatibus eligendi illum.</p>
             </div>
