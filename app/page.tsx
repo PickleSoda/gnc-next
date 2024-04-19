@@ -10,6 +10,7 @@ import jungle  from "@/assets/images/jung.jpg"
 import HomeSectionTwo from "@/components/partials/homeSection2";
 import Button from "@/components/partials/button";
 import Link from 'next/link';
+import woods from '@/assets/images/woods.jpg'
 
 const Home = () => {
 
@@ -28,6 +29,9 @@ const Home = () => {
         </div>
       </section>
       <HomeSectionTwo />
+      <section className="home-section-3">
+            <Image alt="woods" src={woods} data-aos='fade-up'/>
+      </section>
     </main>
   )
 }
