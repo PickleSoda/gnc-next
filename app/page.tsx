@@ -19,7 +19,7 @@ const Home = () => {
 
 
   return (
-   <main className={styles.main}>
+   <main className={styles.main} id='home-page-container'>
       <section className="home-section-1">
         <Image className="home-first-image" alt="jgl" src={jungle} />
         <div >
