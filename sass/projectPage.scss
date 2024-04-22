@@ -6,10 +6,21 @@
 .row {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .col-1-of-3 {
     width: 30%;
+    
+    margin: 0 auto;
+
+    @media (max-width: 700px) {
+        width: 80vw;
+    }
 }
 
 .heading-secondary {
