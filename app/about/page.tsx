@@ -17,8 +17,8 @@ const AboutPage = () => {
   }, [])
 
     return (
-        <div className={styles.main}>
-                  <div className="about-page-container">
+      <div className={styles.main}>
+         <div className="about-page-container">
          <AboutPageSlider/>
          <section className="about-section-1" >
             <Image alt="about-page-img" src={grayImg} data-aos='fade-right'/>
@@ -42,8 +42,8 @@ const AboutPage = () => {
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut adipisci ipsam corporis cumque, necessitatibus nam. Maiores assumenda sapiente eveniet voluptatibus eligendi illum.</p>
             </div>
          </section>
+         </div>
       </div>
-        </div>
     )
 }
 
