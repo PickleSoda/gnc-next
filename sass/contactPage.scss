@@ -3,6 +3,10 @@
     justify-content: space-between;
     width: 80vw;
     margin: 60px auto 0 auto;
+
+    @media (max-width: 900px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .contact-form {
@@ -72,6 +76,11 @@
 .contact-page-left {
     width: 45%;
 
+    @media (max-width: 900px) {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
     & > h2 {
         font-size: 50px;
         margin-bottom: 20px;
@@ -107,6 +116,10 @@
 
 .contact-page-right {
     width: 45%;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
 }
 
 .contact-page-icons {
