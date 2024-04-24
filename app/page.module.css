@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  background-color: #d9ecdd;
+  background-image: linear-gradient(to bottom, #cfe6cf, #d9ecdd);
 }
 
 .description {
