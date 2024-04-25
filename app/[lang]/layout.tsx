@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { Nunito} from "next/font/google";
 import "./globals.css";
 import '../../sass/index.scss'
-import HeaderTop from "../../components/layout/headerTop";
-import Header from "../../components/layout/header";
-import Footer from "../../components/layout/footer";
+import MainLayout from "./components/mainLayout";
+import { getDictionary } from './dictionaries'
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -25,23 +24,21 @@ interface Props {
   params: {lang:string}
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: {lang}
 }: Readonly<Props>) {
-
+  
+  const dict = await getDictionary(lang) // en
   console.log('layout lang', lang);
   
   
   return (
     <html lang={lang}>
       <body>
-          <HeaderTop />
-          <Header dict={undefined} lang={""} />
-          <main className='content'>
+          <MainLayout dict={dict} lang={lang}>
             {children}
-          </main>
-          <Footer />
+          </MainLayout>
       </body>
     </html>
   );

@@ -1,25 +1,29 @@
 import logo from '@/assets/images/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { getDictionary } from "@/app/[lang]/dictionaries";
 
-const Footer = () => {
+const Footer = async ({ lang}: any) => {
+
+    const dict = await getDictionary(lang)
+
     return (
         <footer className="footer">
             <div className="footer-container">
                 <div className='footer-content'>
                     <div className='footer-content-elements'>
                         <Image src={logo} alt='logo' width={50} height={50} />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur, officiis ad atque ducimus soluta alias, consitae autem exercitationem in modi cumque rem reprehenderit officia esse.</p>
+                        <p>{dict.lorem}</p>
                         <span className="header-top-icons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></span>
                     </div>
                     <div className='footer-content-elements'>
-                        <h3>Quick Links</h3>
-                        <Link href='/about'>About</Link>
-                        <Link href='/contact'>Contact</Link>
-                        <Link href='/projects'>Projects</Link>
+                        <h3>{dict.footer.quickLinks}</h3>
+                        <Link href='/about'>{dict.links.about}</Link>
+                        <Link href='/contact'>{dict.links.contact}</Link>
+                        <Link href='/projects'>{dict.links.projects}</Link>
                     </div>
                     <div className='footer-content-elements'>
-                        <h3>Contact Us</h3>
+                        <h3>{dict.footer.contactUs}</h3>
                         <div className="header-top_child-info">
                             <span className="header-top-icons"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></span>
                             <span>(+995) 599 98 66 00</span>
@@ -31,7 +35,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-copyright'>
-                    <p>&copy; Dzzjio 2024, All Rights Reserved</p>
+                    <p>&copy; {dict.rights}</p>
                 </div>
             </div>
         </footer>

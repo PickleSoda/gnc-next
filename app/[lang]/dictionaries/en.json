@@ -1,5 +1,15 @@
 {
-    "products": {
-      "cart": "Add to Cart"
-    }
-  }
+  "title": "GNC",
+  "lorem": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur iure accusamus unde, placeat laudantium dolorem, possimus aperiam tempore, ratione cumque expedita quia assumenda quasi atque. Maxime ullam officiis optio nulla.",
+  "links": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "projects": "Projects"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us"
+  },
+  "rights": " Dzzjio 2024, All Rights Reserved"
+}

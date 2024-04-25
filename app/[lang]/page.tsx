@@ -7,8 +7,8 @@ import { getDictionary } from './dictionaries'
 
 const Home = async ({params}: any) => {
 
-  const {lang} = params
-  console.log('page', lang);
+  const { lang } = params
+  
   const dict = await getDictionary(lang) // en
 
   return (
@@ -16,7 +16,7 @@ const Home = async ({params}: any) => {
       <section className="home-section-1">
         <Image className="home-first-image" alt="jgl" src={jungle} />
         <div >
-          <h1>GNC GNC GNC</h1>
+          <h1>{dict.title}</h1>
           <Link href='projects'><Button text={"Our Projects"}  /></Link>
         </div>
       </section>
