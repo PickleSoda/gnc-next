@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./button";
 
 
@@ -5,17 +6,17 @@ interface ProjectCardProps {
     heading: string;
     text: string;
     price: number;
-    id: string;
+    link: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
     heading,
     text,
     price,
-    id,
+    link,
 }) => {
     return (
-        <div className="col-1-of-3" id={id}>
+        <div className="col-1-of-3">
             <div className="card">
                 <div className="card__side card__side--front">
                     <div className="card__picture card__picture--1">
@@ -34,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                             <p className="card__price-only">Only</p>
                             <p className="card__price-value">${price}</p>
                         </div>
-                        <Button text={"Learn More!"} />
+                        <Link href={`${link}`}><Button text={"Learn More!"} /></Link>
                     </div>
                 </div>
             </div>

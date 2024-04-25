@@ -9,7 +9,7 @@ import { useState } from "react"
 import { usePathname } from "next/navigation"
 import MobileMenu from "../ui/mobileMenu"
 
-const Header = () => {
+const Header = ({ dict, lang}: { dict:any; lang:string}) => {
 
     const pathname = usePathname();
     const [showGeoFlag, setShowGeoFlag] = useState<boolean>(true);

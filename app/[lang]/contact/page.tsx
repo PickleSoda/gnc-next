@@ -1,10 +1,11 @@
-import styles from "@/app/page.module.css";
-import ContactForm from "@/components/partials/form";
+'use server'
+
+import ContactForm from "../../../components/partials/form";
 import Link from "next/link";
 
 const ContactPage = () => {
     return (
-        <div className={styles.main}>
+        <div>
             <div className="contact-page-container">
                 <div className="contact-page-left">
                     <h2>Get In Touch!</h2>

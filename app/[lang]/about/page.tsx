@@ -2,13 +2,12 @@
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import styles from "@/app/page.module.css";
 import Image from "next/image";
 import grayImg from '@/assets/images/gray-box.jpeg'
 import woods from '@/assets/images/woods.jpg'
-import AboutPageSlider from "@/components/partials/slider";
-import Accordion from "@/components/partials/accordion";
 import { useEffect } from 'react';
+import AboutPageSlider from '../../../components/partials/slider';
+import Accordion from '../../../components/partials/accordion';
 
 const AboutPage = () => {
 
@@ -17,7 +16,6 @@ const AboutPage = () => {
   }, [])
 
     return (
-      <div className={styles.main}>
          <div className="about-page-container">
          <AboutPageSlider/>
          <section className="about-section-1" >
@@ -43,7 +41,6 @@ const AboutPage = () => {
             </div>
          </section>
          </div>
-      </div>
     )
 }
 
