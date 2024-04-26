@@ -23,7 +23,7 @@ const HeaderLangs = () => {
             className="cursor-pointer flex p-[3px]"
             onClick={() => handleToggle('ge')} // Update flag and path on click
           >
-            <Image src={uk} alt="en" width={34} height={24} className="mr-[5px]" /> EN
+            <Image style={{border: '1px solid gray', borderRadius: '5px'}} src={uk} alt="en" width={34} height={24} className="mr-[5px]" />
           </div>
         </Link>
       ) : (
@@ -32,7 +32,7 @@ const HeaderLangs = () => {
             className="cursor-pointer flex p-[3px]"
             onClick={() => handleToggle('en')} // Update flag and path on click
           >
-            <Image src={geo} alt="ge" width={34} height={24} className="mr-[5px]" /> GE
+            <Image style={{border: '1px solid gray', borderRadius: '5px'}} src={geo} alt="ge" width={34} height={24} className="mr-[5px]" />
           </div>
         </Link>
       )}
