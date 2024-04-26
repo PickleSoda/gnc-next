@@ -6,10 +6,11 @@
   box-sizing: border-box;
   font-family: 'Noto Sans Georgian';
 }
-/* 
+
 body {
-  background-image: linear-gradient(to bottom, #cfe6cf, #d9ecdd);
-} */
+  background-color: #cfe6cf;
+}
+
 
 .main {
   display: flex;

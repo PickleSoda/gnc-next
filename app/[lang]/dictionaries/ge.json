@@ -11,5 +11,8 @@
     "quickLinks": "ლინკები",
     "contactUs": "დაგვიკავშირდით"
   },
-  "rights": " Dzzjio 2024, ყველა უფლება დაცულია"
+  "rights": " Dzzjio 2024, ყველა უფლება დაცულია",
+  "contact": {
+    "getInTouch": "დაგვიკავშირდით !"
+  }
 }

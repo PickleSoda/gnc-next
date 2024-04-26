@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from "react-google-recaptcha";
 import Button from "./button";
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
 
@@ -86,11 +86,12 @@ const ContactForm = () => {
       
         if (!hasError) {
           toast.success('Form submitted successfully');
-          setFormData({
-            name: '',
-            email: '',
-            message: '',
-          });
+          //mesege is sent blank with this code (fix later)
+        //   setFormData({
+        //     name: '',
+        //     email: '',
+        //     message: '',
+        //   });
         }
       }
 

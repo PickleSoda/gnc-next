@@ -6,8 +6,9 @@ import Link from 'next/link';
 import { getDictionary } from './dictionaries'
 
 const Home = async ({params}: any) => {
-
-  const { lang } = params
+  console.log(params);
+  
+  const { lang } = params 
   
   const dict = await getDictionary(lang) // en
 

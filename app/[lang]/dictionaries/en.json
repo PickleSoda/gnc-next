@@ -11,5 +11,8 @@
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us"
   },
-  "rights": " Dzzjio 2024, All Rights Reserved"
+  "rights": " Dzzjio 2024, All Rights Reserved",
+  "contact": {
+    "getInTouch": "Get In Touch !"
+  }
 }
