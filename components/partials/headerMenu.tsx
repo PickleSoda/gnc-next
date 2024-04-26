@@ -7,10 +7,10 @@ async function HeaderMenu({ lang }:any) {
 
   return (
     <>
-        <Link href='/'>{dict.links.home}</Link>
-        <Link href='/about'>{dict.links.about}</Link>
-        <Link href='/contact'>{dict.links.contact}</Link>
-        <Link href='/projects'>{dict.links.projects}</Link>
+        <Link href={`/${lang}/`}>{dict.links.home}</Link>
+        <Link href={`/${lang}/about`}>{dict.links.about}</Link>
+        <Link href={`/${lang}/contact`}>{dict.links.contact}</Link>
+        <Link href={`/${lang}/projects`}>{dict.links.projects}</Link>
     </>
 )
 };
