@@ -1,0 +1,58 @@
+
+
+{
+  "IndexPage": {
+    "title": "next-intl Beispiel",
+    "description": "Dies ist ein Beispiel, das die Verwendung von <code>next-intl</code> mit dem Next.js App Router demonstriert. Bei Ändern der Sprache rechts oben ändert sich der Inhalt dieser Seite."
+  },
+  "PathnamesPage": {
+    "title": "Pfadnamen",
+    "description": "<p>Auch die Pfadnamen sind internationalisiert.</p><p>Wenn du die Standardsprache Englisch verwendest, siehst du <code>/en/pathnames</code> in der Adressleiste des Browsers auf dieser Seite.</p><p>Wenn du die Sprache auf Deutsch änderst, wird die URL entsprechend lokalisiert (<code>/de/pfadnamen</code>).</p>"
+  },
+  "Error": {
+    "title": "Etwas ist schief gelaufen!",
+    "description": "<p>Es ist leider ein Problem aufgetreten.</p><p>Du kannst versuchen <retry>diese Seite neu zu laden</retry>.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Seite nicht gefunden",
+    "description": "Bitte überprüfe die Addressleiste deines Browsers oder verwende die Navigation um zu einer bekannten Seite zu wechseln."
+  },
+  "LocaleLayout": {
+    "title": "next-intl Beispiel"
+  },
+  "LocaleSwitcher": {
+    "label": "Choose a language",
+    "locale": "{locale, select, ge {🇬🇪 ქართული} en {🇺🇸 English} other {other}}"
+  },
+  "Navigation":  {
+    "home": "მთავარი",
+    "about": "ჩვენს შესახებ",
+    "contact": "კონტაქტი",
+    "projects": "პროექტები"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "title": "Dokumentation",
+        "description": "Erfahre mehr über next-intl in der offiziellen Dokumentation.",
+        "href": "https://next-intl-docs.vercel.app/"
+      },
+      "source": {
+        "title": "Quellcode",
+        "description": "Sieh dir den Quellcode dieses Beispiels auf GitHub an.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router"
+      }
+    }
+  },
+  "title": "ჯი-ენ-სი",
+  "lorem": "ლორემ იპსუმ წითელა ზევიდან კალიი ადამიანებია, პარადოქსი წამოროხა მედიკო ბელორუსი, ვყუდულობდი ტოვებდი შემაწუხებ ჰენდონი. გატაკეს წავსულიყავი თეტჩერ, გარიყულ ფსიქიკის ღონისძიებაზე, კიბეზედ გითხრათ ხამხამით, უცხოების მოიცა. ზევიდან მომაკვდავი მივაკვლიეთ, დაჰგოგავდა ბეჯით რრროგორ, თინეიჯერებო ბოლშევიკები მანეთიც ვყუდულობდი, შეაზიზღა მედიკო.",
+
+  "footer": {
+    "quickLinks": "ლინკები",
+    "contactUs": "დაგვიკავშირდით"
+  },
+  "rights": " Dzzjio 2024, ყველა უფლება დაცულია",
+  "contact": {
+    "getInTouch": "დაგვიკავშირდით !"
+  }
+}

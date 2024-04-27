@@ -4,16 +4,14 @@ import Footer from "../../../components/layout/footer";
 
 type Props = {
     children: React.ReactNode;
-    dict: any;
-    lang: string;
   };
-const MainLayout = ({ children, dict, lang}: Props) => {
+const MainLayout = ({ children}: Props) => {
     return (
         <div>
             <HeaderTop />
-            <Header dict={dict} lang={lang} />
+            <Header />
             <main className="content">{children}</main>
-            <Footer lang={lang}/>
+            <Footer />
         </div>
     )
 }

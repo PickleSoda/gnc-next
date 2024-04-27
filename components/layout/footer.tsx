@@ -1,16 +1,14 @@
 import logo from '@/assets/images/logo.png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { getDictionary } from "@/app/[lang]/dictionaries";
 
-const Footer = async ({ lang}: any) => {
+const Footer =  ({ lang}: any) => {
 
-    const dict = await getDictionary(lang)
 
     return (
         <footer className="footer">
             <div className="footer-container">
-                <div className='footer-content'>
+                {/* <div className='footer-content'>
                     <div className='footer-content-elements'>
                         <Image src={logo} alt='logo' width={50} height={50} />
                         <p>{dict.lorem}</p>
@@ -36,7 +34,7 @@ const Footer = async ({ lang}: any) => {
                 </div>
                 <div className='footer-copyright'>
                     <p>&copy; {dict.rights}</p>
-                </div>
+                </div> */}
             </div>
         </footer>
     )

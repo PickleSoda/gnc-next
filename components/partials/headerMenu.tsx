@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import { getDictionary } from "@/app/[lang]/dictionaries";
 
+import {useTranslations} from 'next-intl';
+import NavigationLink from './navigationLink';
 
-async function HeaderMenu({ lang }:any) {
-  const dict = await getDictionary(lang)
-
+function HeaderMenu({ lang }:any) {
+  // const dict = await getDictionary(lang)
+  const t = useTranslations('Navigation');
   return (
     <>
-        <Link href={`/${lang}/`}>{dict.links.home}</Link>
-        <Link href={`/${lang}/about`}>{dict.links.about}</Link>
-        <Link href={`/${lang}/contact`}>{dict.links.contact}</Link>
-        <Link href={`/${lang}/projects`}>{dict.links.projects}</Link>
+        <NavigationLink href={'/'}>{t('home')}</NavigationLink>
+        <NavigationLink href={'/about'}>{t('about')}</NavigationLink>
+        <NavigationLink href={'/contact'}>{t('contact')}</NavigationLink>
+        <NavigationLink href={'/projects'}>{t('projects')}</NavigationLink>
     </>
 )
 };
